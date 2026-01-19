@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <style>
+        :root {
+            --bg: white; 
+            --text: black; 
+            --card: white;
+        }
+        body.dark {
+            --bg: black;
+            --text: white; 
+            --card: black; 
+        }
+        * {
+            margin: 0; 
+            padding: 0; 
+        }
+        body {
+            font-family: Arial, sans-serif; 
+            background: var(--bg);
+            color: var(--text); 
+            transition: background 0.3s, color 0.3s; 
+        }
+        .dashboard {
+            display: grid; 
+            grid-template-columns: 200px 1fr; 
+            height: 100vh; 
+        }
+        .sidebar {
+            background: #333;
+            color: white;
+            padding: 20px; 
+        }
+        .header, .footer {
+            background: var(--card); 
+            padding: 10px;
+            text-align: center; 
+        }
+        .main {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+        .card {
+            background: var(--card);
+            padding: 20px; 
+            border-radius: 8px;
+            box-shadow: 0 0 5px gray; 
+        }
+    </style>
+</head>
+<body>
+<div class="dashboard">
+    <div class="sidebar"><h2>Admin</h2><p>Dashboard</p><p>Users</p><p>Settings</p></div>
+    <div class="header"><h3>Admin Dashboard</h3><button onclick="toggleTheme()">Toggle Theme</button></div>
+    <div class="main">
+        <div class="card">Users: 120</div>
+        <div class="card">Sales: ₹5000</div>
+        <div class="card">Orders: 45</div>
+        <div class="card">Visits: 900</div>
+    </div>
+    <div class="footer">© 2026 Dashboard</div>
+</div>
+<script>
+    function toggleTheme() { document.body.classList.toggle("dark"); }
+</script>
+</body>
+</html>
