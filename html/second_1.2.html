@@ -3,6 +3,22 @@
 <head>
   <title>Responsive Bank UI</title>
   <style>
+    nav {
+        background-color: #333;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 12px;
+        margin-right: 10px;
+        display: inline-block;
+        border-radius: 4px;
+    }
+    nav a:hover {
+        background-color: #555;
+    }
     #b1{
       background-color: aqua;
       color: white;
@@ -14,6 +30,12 @@
   </style>
 </head>
 <body>
+  <nav>
+    <a href="first_1.1.html">Registration Form</a> | 
+    <a href="second_1.2.html">Bank UI</a> | 
+    <a href="third_1.3.html">Admin Dashboard</a>
+  </nav>
+
   <h2>Balance : $ <span id="balance"></span></h2>
   <label for="amount">Amount</label> <br><br>
   <input type="number" placeholder="Paisa Enter Karo" id="amount" > <br><br>

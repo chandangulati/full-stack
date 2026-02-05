@@ -3,6 +3,22 @@
 <head>
     <title>Admin Dashboard</title>
     <style>
+        nav {
+            background-color: #333;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            margin-right: 10px;
+            display: inline-block;
+            border-radius: 4px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
         :root {
             --bg: white; 
             --text: black; 
@@ -52,7 +68,11 @@
         }
     </style>
 </head>
-<body>
+<body>    <nav>
+      <a href="first_1.1.html">Registration Form</a> | 
+      <a href="second_1.2.html">Bank UI</a> | 
+      <a href="third_1.3.html">Admin Dashboard</a>
+    </nav>
 <div class="dashboard">
     <div class="sidebar"><h2>Admin</h2><p>Dashboard</p><p>Users</p><p>Settings</p></div>
     <div class="header"><h3>Admin Dashboard</h3><button onclick="toggleTheme()">Toggle Theme</button></div>
